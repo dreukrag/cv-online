@@ -6,6 +6,14 @@
     background-color: #333;
     border-color: #080808;
     color: #999;
+    min-height: 30vh;
+    display: grid;
+}
+.homeImage{
+    position: relative;
+    top: 25%;    
+    width: 30vw;
+    height: 30vw;
 }
 .caption {
     position: relative;
@@ -22,7 +30,7 @@
     }
 }
 .parallax { 
-    height: 35vh; 
+    height: 70vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,7 +132,7 @@
 
 .transparent__p {
   margin: 15px;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 5px;
+  background: rgba(55, 55, 55, 0.8);
+  padding: 0px 10vw;
   box-shadow: 0 0 5px gray;
 }

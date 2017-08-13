@@ -8,20 +8,17 @@ export class ContentComponentContact extends React.Component {
             <ContentComponent logo={logo} caption="Contact">
                 <p>Você pode me achar no LinkedIn ou via email:</p>
                 <address>
-                    <abbr title="Steam"></abbr>http://steamcommunity.com/id/filipegroh/<br />
-                    <abbr title="Steam"></abbr>filipegroh<br />
-                    <abbr title="Steam"></abbr>filipegroh<br />
-                </address>
-
-                <address>
-                    <strong>LinkedIn</strong>
+                    <strong>LinkedIn</strong> <br/>
                     <a href="https://www.linkedin.com/in/filipe-alexandre-groh-889b1b98/">Filipe Groh</a>
                 </address>
                 <address>
-                    <strong>Filipe Alexandre Groh Name</strong><br />
+                    <strong>Filipe Alexandre Groh</strong><br />
                     <a href="mailto:#">filipegroh@gmail.com</a>
                 </address>
-
+                <address>
+                    <strong>Steam</strong> <br/>
+                    <a href="http://steamcommunity.com/id/filipegroh/">http://steamcommunity.com/id/filipegroh/</a>
+                </address>
             </ContentComponent>
         </div>
     )
