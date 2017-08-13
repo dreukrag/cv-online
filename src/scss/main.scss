@@ -22,7 +22,7 @@
     }
 }
 .parallax { 
-    height: 75vh; 
+    height: 35vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,4 +59,72 @@
         margin-top: 3px;
         text-align: center;
     }
+}
+.GalleryThumb{
+    &__container{
+        display: flex;
+        justify-content: space-evenly;
+        padding:5vw;
+    }
+    &__main{
+        top:0%;
+        transform: translateY(-0%);
+        width:20vw;
+        height:20vw;
+    }
+    &__content{
+        overflow: auto;
+        position: relative;
+        color:white;
+        h3, h5{
+            background-color: rgba(50,50,50,0.3)
+        }
+        &:before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+
+            display: block;
+            background-size:cover;
+            width: 100%;
+            height: 100%;
+
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+    }
+}
+
+.GalleryItem{
+    &__modal {
+        width: 70vw;
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+    }
+    &__backdrop {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9998;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.transparent__p {
+  margin: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  box-shadow: 0 0 5px gray;
 }
