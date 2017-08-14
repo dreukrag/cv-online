@@ -15,7 +15,7 @@ export class ContentComponentHome extends React.Component {
                 }}>
                 </style>
                 <div className="parallax parallax__blur parallax__blur-assist large-window" >
-                    <div className="content-component__caption-brand" style={{ paddingTop: "50px"}}>
+                    <div className="content-component__caption-brand" style={{ paddingTop:"75px",paddingLeft:"50px"}}>
                         <p className=" animation-rtlf">Filipe</p>
                         <p className=" animation-rtl10">Alexandre</p>
                         <p className="  animation-rtl20">Groh</p>
