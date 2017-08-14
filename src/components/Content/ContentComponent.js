@@ -5,8 +5,7 @@ export default class ContentComponent extends React.Component {
     render = () => (
         <div >
             <div className="parallax" style={{ backgroundImage: "url(" + this.props.logo + ")" }}>
-                <div className="caption">
-                    {/* {this.props.imageCaption == null ? <img src={this.props.captionImage} alt="" className="homeImage img-circle" />:false} */}
+                <div className="caption">                    
                     <span className="caption__text transparent__p">{this.props.caption}</span>
                 </div>
             </div>

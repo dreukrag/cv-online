@@ -15,6 +15,85 @@
     width: 30vw;
     height: 30vw;
 }
+//right to left full - flex
+@keyframes rightToLeft-full {
+    from {left:100%;}
+    to {left:0%;}
+}
+//right to left 10 - flex
+@keyframes rightToLeft-10 {
+    from {left:100%;}
+    to {left:25px;}
+}
+//right to left 20% - flex
+@keyframes rightToLeft-20 {
+    from {left:100%;}
+    to {left:50px;}
+}
+//fade in
+@keyframes fadeIntoView{
+    from {
+        color:transparent;
+        background-color: transparent;
+    }
+    to {
+        color:#aaa
+    }
+}
+.animation-{
+    &rtlf{
+        animation-name: rightToLeft-full;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    &rtl10{
+        animation-name: rightToLeft-10;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    &rtl20{
+        animation-name: rightToLeft-20;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    &fi{
+        animation-name: fadeIntoView;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
+.content-component{
+    &__caption-main{
+    position: relative;
+    top: 10%;
+    text-align: left;
+
+    position: relative;
+    left: 0%;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    transform: translateY(-50%);
+    background-color: transparent;
+    font-size: 40px;
+    color: #aaa;
+    display:flex;
+    }
+&__caption-sec{
+    position: relative;
+    right: 0;
+    top: 50%;
+    width: 65%;
+    text-align: left;
+    color: #000;
+    float: right;
+    background-color: transparent;
+    font-size: 15px;
+    color: #aaa;
+    display: inline;
+    }
+}
 .caption {
     position: relative;
     left: 0;
@@ -135,4 +214,31 @@
   background: rgba(55, 55, 55, 0.8);
   padding: 0px 10vw;
   box-shadow: 0 0 5px gray;
+}
+.large-window{
+    height:100vh;
+}
+.parallax__blur{
+        background: linear-gradient(rgba(10,10,10,1), rgba(10,10,10,0.5));
+}
+.parallax__blur:before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    display: block;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
