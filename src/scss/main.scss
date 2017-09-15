@@ -63,6 +63,13 @@
     }
 }
 .content-component{
+    &__home-spacer{
+        background-color: #333;
+        border-color: #080808;
+        color: #999;
+        min-height: 5vh;
+        display: grid;
+    }
     &__caption-brand{
         padding-top: 15px;
         overflow:hidden;
@@ -228,6 +235,7 @@
 }
 .large-window{
     height:100vh;
+    position: relative;
 }
 .parallax__blur{
         background: linear-gradient(to top right, rgba(10,10,10,1), rgba(10,10,10,0.5));
