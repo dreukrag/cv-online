@@ -11,7 +11,6 @@ class App extends Component {
         <HeaderComponent />
         <ContentComponentHome style={{marginTop: "50px"}}></ContentComponentHome>
         <ContentComponentGallery></ContentComponentGallery>
-        <ContentComponentAbout></ContentComponentAbout>
         <ContentComponentContact></ContentComponentContact>
       </div>
     );
