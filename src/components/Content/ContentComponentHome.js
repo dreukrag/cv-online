@@ -10,12 +10,12 @@ export class ContentComponentHome extends React.Component {
             <div>
                 <style dangerouslySetInnerHTML={{
                     __html: [
-                        '.parallax__blur-assist:before {background-image:url("' + filipe + '")}'
+                        '.parallax__blur-assist {background-image:url("' + filipe + '")}'
                     ]
                 }}>
                 </style>
-                <div className="parallax parallax__blur parallax__blur-assist large-window" >
-                    <div className="content-component__caption-brand" style={{ paddingTop:"75px",paddingLeft:"50px"}}>
+                <div className="parallax parallax__blur-home large-window" >
+                    <div className="content-component__caption-brand" style={{ paddingTop:"60px",paddingLeft:"25px"}}>
                         <p className=" animation-rtlf">Filipe</p>
                         <p className=" animation-rtl10">Alexandre</p>
                         <p className="  animation-rtl20">Groh</p>
