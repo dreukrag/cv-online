@@ -37,6 +37,4 @@ export class ContentComponentGallery extends React.Component {
                 </ContentComponent>
             </div>
         )
-
-
 }
