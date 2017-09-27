@@ -1,7 +1,13 @@
-import React from 'react'
-import ContentComponent from './ContentComponent'
+import React from 'react';
+import ContentComponent from './ContentComponent';
+
 import logo from './Boston.jpg';
-import { GalleryItem, GalleryThumbnail } from './Gallery'
+import logoMedgrupo from './Logos/brand.png';
+import logoCelistics from './Logos/celistics.png';
+import logoBrand from './Logos/medgrupo.jpg';
+import logoCadmus from './Logos/cadmus.png';
+
+import { GalleryItem, GalleryThumbnail } from './Gallery';
 
 export class ContentComponentGallery extends React.Component {
     render = () =>
@@ -9,29 +15,28 @@ export class ContentComponentGallery extends React.Component {
             <div>
                 <ContentComponent logo={logo} caption="Experiências">
                     <div className="GalleryThumb__container">
-                        <GalleryThumbnail empresa="Medgrupo" logo={logo} periodo="2017" cargo="Desenvolvedor Front-End Jr">
-                            <p>Parte do time de desenvolvimento do aplicativo medsoft para mobile.</p>
-                            <p>Parte do time de desenvolvimento das parte de apostila do aplicativo mobile.</p>
+                        <GalleryThumbnail empresa="Medgrupo" logo={"logo__medgrupo"} periodo="  2016 / 2  " cargo="Desenvolvedor Front-End">
+                            <p>Membro do time de desenvolvimento do aplicativo medsoft para mobile.</p>
+                            <p>Membro do time de desenvolvimento das apostilas para o aplicativo mobile.</p>
                             <p>Criei o sistema usado para uso de temas nas apostilas.</p>
                         </GalleryThumbnail>
-                        <GalleryThumbnail empresa="Total Express" logo={logo} periodo="2013" cargo="Consultor">
+                        <GalleryThumbnail empresa="Celistics" logo={"logo__celistics"} periodo="2013" cargo="Consultor">
                             <p>Criei aplicação consolidando cronogramas de entregas com capacidade de rastreamento.</p>
                             <p>Automatizei a criação de relatórios contendo gráficos complexos.</p>
                             <p>Criei aplicação para impressão de etiquetas com código de barras.</p>
                         </GalleryThumbnail>
-                        <GalleryThumbnail empresa="Brand Analytics" logo={logo} periodo="2013" cargo="Consultor">
-                            <p>Criei um processe totalmente automatizado para análise de dados estatísticos complexos, com geração de relatório em power-points e excel contendo os gráficos pronto para serem apresentados. Reduzi o tempo gasto para executar tais atividades de 1 semestre para minutos.</p>
+                        <GalleryThumbnail empresa="Brand Analytics" logo={"logo__brand"} periodo="2013" cargo="Consultor">
+                            <p>Criei um processo totalmente automatizado para análise de dados estatísticos complexos</p> <p>Estabeleci um processo para geração de relatório em power-points/excel contendo gráficos pronto para apresentação.</p>
+                            <p>No total reduzi o tempo gasto para executar tais atividades de 1 semestre para minutos.</p>
                         </GalleryThumbnail>
-                        <GalleryThumbnail empresa="Cadmus" logo={logo} periodo="2012-2017" cargo="Consultor">
-                            <p className="lead">Cadmus - Consultor - 2014 - 2016</p>
+                        <GalleryThumbnail empresa="Cadmus" logo={"logo__cadmus"} periodo="2012 - 2016 / 2" cargo="Consultor">
+                            <p className="lead">Cadmus - (Estagiário) Consultor - (2012) 2014 - 2016/2</p>
                             <p>Manutenção do ERP.</p>
                             <p>Desenvolvimento do ERP.</p>
                             <p>Manutenção de bancos de dados.</p>
                             <p>Criação de soluções para uso interno.</p>
                             <p>Integração do ERP com o sistema de pagamentos do Itaú.</p>
                             <p>Alocação em clientes.</p>
-                            <p className="lead">Cadmus - Estagiário - 2012 - 2014</p>
-                            <p>Como estagiário fiquei responsável por dar manutenção aos sistemas internos e logo passei a cuidar do ERP além de trabalhar como consultor a serviçe da Cadmus.</p>
                         </GalleryThumbnail>
                     </div>
                 </ContentComponent>
