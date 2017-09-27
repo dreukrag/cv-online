@@ -84,8 +84,8 @@ export default class HeaderComponent extends React.Component {
         this.setState({
             showDropdownMenu: false
         })
-        var scrollTarget = ReactDOM.findDOMNode(this.props.home);
-        window.scrollTo(scrollTarget.offsetTop, 0);
+        // var scrollTarget = ReactDOM.findDOMNode(this.props.home);
+        // window.scrollTo(scrollTarget.offsetTop, 0);
     }
     handleLinkClickGallery = (ev, destination) => {
         this.setState({
