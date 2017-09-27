@@ -22,5 +22,5 @@
     "sass": "node-sass --output-style compressed src/scss/main.scss > src/css/main.css",
     "watch-sass": "node-sass --watch --recursive --output src/css/main.css --source-map true --source-map-contents src/scss/main.scss"
   },
-  "homepage": "https://myusername.github.io/my-app"
+  "homepage": "https://dreukrag.github.io/cv-online"
 }
