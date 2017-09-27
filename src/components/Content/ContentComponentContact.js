@@ -5,7 +5,7 @@ import logo from './CostaRicanFrog.jpg';
 export class ContentComponentContact extends React.Component {
     render = () => (
         <div>
-            <ContentComponent logo={logo} caption="Contact">
+            <ContentComponent logo={logo} caption="Contato">
                 <p>Você pode me achar no LinkedIn ou via email:</p>
                 <address>
                     <strong>LinkedIn</strong> <br/>
@@ -17,7 +17,7 @@ export class ContentComponentContact extends React.Component {
                 </address>
                 <address>
                     <strong>Steam</strong> <br/>
-                    <a href="http://steamcommunity.com/id/filipegroh/">http://steamcommunity.com/id/filipegroh/</a>
+                    <a href="http://steamcommunity.com/id/filipegroh/">Cass</a>
                 </address>
             </ContentComponent>
         </div>
