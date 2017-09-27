@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^4.2.0",
+    "gh-pages": "^1.0.0",
     "moment": "^2.18.1",
     "re-base": "^3.0.3",
     "react": "^15.6.1",
@@ -18,5 +19,6 @@
     "eject": "react-scripts eject",
     "sass": "node-sass --output-style compressed src/scss/main.scss > src/css/main.css",
     "watch-sass": "node-sass --watch --recursive --output src/css/main.css --source-map true --source-map-contents src/scss/main.scss"
-  }
+  },
+  "homepage": "https://myusername.github.io/my-app"
 }
